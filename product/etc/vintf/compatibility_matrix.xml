@@ -1,0 +1,40 @@
+<!--
+    Input:
+        vendor_framework_compatibility_matrix.xml
+        vendor_framework_compatibility_matrix.xml
+-->
+<compatibility-matrix version="5.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>com.dsi.ant</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAnt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>interfaces.factoryAta</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFactoryAta</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>interfaces.factoryInterface</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFactoryInterface</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.radio.qcriNvOpt</name>
+        <version>1.0</version>
+        <interface>
+            <name>IqcriNvOpt</name>
+            <instance>qcrinvopt0</instance>
+            <instance>qcrinvopt1</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
