@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "enable": true,
+  "appWhiteList": [
+    "com.tencent.mm",
+    "com.ss.android.ugc.aweme",
+    "com.tencent.mobileqq",
+    "com.smile.gifmaker",
+    "com.xingin.xhs",
+    "com.kuaishou.nebula",
+    "com.ss.android.ugc.aweme.lite",
+    "com.sina.weibo",
+    "com.ss.android.article.video",
+    "com.ss.android.article.news"
+  ],
+  "activityBlackList": [
+  ]
+}
