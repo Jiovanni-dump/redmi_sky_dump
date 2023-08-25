@@ -1,0 +1,10 @@
+
+ro.product.vendor.brand=Redmi
+ro.product.vendor.name=sky_in
+ro.product.vendor.device=sky
+ro.vendor.build.fingerprint=Redmi/sky_in/sky:13/TKQ1.221114.001/V14.0.4.0.TMWINXM:user/release-keys
+ro.product.vendor.model=23076RN4BI
+ro.product.vendor.marketname=Redmi 12 5G
+ro.product.board=sky
+ro.bootimage.build.fingerprint=Redmi/sky_in/sky:13/TKQ1.221114.001/V14.0.4.0.TMWINXM:user/release-keys
+
