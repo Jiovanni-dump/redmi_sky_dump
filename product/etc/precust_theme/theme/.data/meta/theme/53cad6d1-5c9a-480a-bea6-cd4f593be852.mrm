@@ -1,0 +1,125 @@
+{
+  "localId": "53cad6d1-5c9a-480a-bea6-cd4f593be852",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "cdc2589a3d2a4c50f586cbb9fdf99255b5a0c2e0",
+  "platform": 10,
+  "size": 29585528,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "fallback": "MIUI"
+  },
+  "designers": {
+    "fallback": "MIUI"
+  },
+  "titles": {
+    "fallback": "POCO"
+  },
+  "descriptions": {},
+  "builtInThumbnails": {
+    "en_US": [
+      "en_US_lockscreen_0.png",
+      "en_US_launcher_0.png",
+      "en_US_launcher_1.png",
+      "en_US_statusbar_0.png",
+      "en_US_statusbar_1.png",
+      "en_US_statusbar_2.png",
+      "en_US_contact_0.png",
+      "en_US_mms_0.png",
+      "en_US_mms_1.png",
+      "en_US_fonts_0.png",
+      "en_US_fonts_1.png",
+      "en_US_fonts_2.png"
+    ],
+    "fallback": [
+      "preview_lockscreen_0.png",
+      "preview_launcher_0.png",
+      "preview_launcher_1.png",
+      "preview_statusbar_0.png",
+      "preview_statusbar_1.png",
+      "preview_statusbar_2.png",
+      "preview_contact_0.png",
+      "preview_mms_0.png",
+      "preview_mms_1.png",
+      "preview_icons_small_0.png",
+      "preview_icons_0.png",
+      "preview_icons_1.png",
+      "preview_fonts_0.png",
+      "preview_fonts_1.png",
+      "preview_fonts_2.png"
+    ]
+  },
+  "builtInPreviews": {
+    "en_US": [
+      "en_US_lockscreen_0.png",
+      "en_US_launcher_0.png",
+      "en_US_launcher_1.png",
+      "en_US_statusbar_0.png",
+      "en_US_statusbar_1.png",
+      "en_US_statusbar_2.png",
+      "en_US_contact_0.png",
+      "en_US_mms_0.png",
+      "en_US_mms_1.png",
+      "en_US_fonts_0.png",
+      "en_US_fonts_1.png",
+      "en_US_fonts_2.png"
+    ],
+    "fallback": [
+      "preview_lockscreen_0.png",
+      "preview_launcher_0.png",
+      "preview_launcher_1.png",
+      "preview_statusbar_0.png",
+      "preview_statusbar_1.png",
+      "preview_statusbar_2.png",
+      "preview_contact_0.png",
+      "preview_mms_0.png",
+      "preview_mms_1.png",
+      "preview_icons_0.png",
+      "preview_icons_1.png",
+      "preview_fonts_0.png",
+      "preview_fonts_1.png",
+      "preview_fonts_2.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "392a135a-14f5-402d-b240-281e939299b7",
+      "resourceCode": "wallpaper",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "4c4e4797-ec56-4555-80d0-bb10aef836d7",
+      "resourceCode": "lockscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "8aaf5b67-b920-4590-8556-5fa2a8d798c8",
+      "resourceCode": "plugin_config.xml",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "7b519278-a852-4798-92ee-16fe0d64f824",
+      "resourceCode": "icons",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null,
+  "screenRatio": null,
+  "miuiAdapterVersion": "2.0"
+}
