@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packages>
+    <package name="com.ironsource.appcloud.oobe.hutchison" carrier="hg" />
+    <package name="com.dti.bouyguestelecom" carrier="by" />
+    <package name="com.aura.oobe.vodafone" carrier="vf" />
+    <package name="com.orange.aura.oobe" carrier="or" />
+    <package name="com.dti.telefonica" carrier="tf" />
+    <package name="com.aura.oobe.deutsche" carrier="dt" />
+</packages>
