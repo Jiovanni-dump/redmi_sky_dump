@@ -1,0 +1,15 @@
+product/data-app/MIMediaEditorGlobal/MIMediaEditorGlobal.apk
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+product/priv-app/ExtraPhotoGlobal/ExtraPhotoGlobal.apk
+product/priv-app/Messages/Messages.apk
+product/priv-app/Gallery_T_Global/Gallery_T_Global.apk
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/MIBrowserGlobal_builtin_before_2021/MIBrowserGlobal_builtin_before_2021.apk
+product/priv-app/Velvet/Velvet.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk
+system_ext/apex/com.android.vndk.v30.apex
+system_ext/priv-app/Settings/Settings.apk
+boot.img
+modem.img
+bootRE/boot.elf
+recovery.img

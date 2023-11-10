@@ -1,0 +1,4 @@
+product/priv-app/MiuiCamera/MiuiCamera.apk.xz
+boot.img.xz
+bootRE/boot.elf.xz
+recovery.img.xz
