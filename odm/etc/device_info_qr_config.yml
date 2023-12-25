@@ -1,0 +1,288 @@
+device: sky
+enableShutdownFunc: true
+
+positions:
+  important_info:
+    size: 400
+    xAxis: 10
+    yAxis: 260
+  expand_info:
+    size: 400
+    xAxis: 45
+    yAxis: 50
+
+importantInfoList:
+  # PCB SN
+  - type: command
+    name: pcb_sn
+    key_name: a
+    need_name: true
+    command: getprop ro.ril.oem.sno
+
+  # Battery level
+  - type: command
+    name: battery_level
+    key_name: b
+    need_name: true
+    command: printf "%3d%%" $(dumpsys battery | head -11 | tail -1 | cut -d ' ' -f 4)
+
+  # MEID, if the phone supports CDMA, it must have the value
+  - type: sim
+    name: meid
+    key_name: g
+    need_name: true
+
+  # Factory ID
+  - type: command
+    name: factory_id
+    key_name: o
+    need_name: true
+    command: getprop ro.ril.factory_id
+
+  # Software version
+  - type: software_version
+    name: software_version
+    key_name: v
+
+checkInfoList:
+
+  # Secure boot status
+  - type: command
+    name: secure_boot
+    key_name: a
+    command: getprop ro.boot.secureboot
+    pass_value: 1
+
+  # Whether the bootloader lock is locked
+  - type: command
+    name: bootloader_lock
+    key_name: b
+    command: getprop ro.boot.verifiedbootstate
+    pass_value: green
+
+  # RPMP provision
+  - type: command
+    name: rpmp
+    key_name: c
+    # Qualcomm
+    command: getprop vendor.sys.rpmb_state
+    pass_value: 23
+ 
+  # Hardware version
+  - type: command
+    name: hardware_version
+    key_name: m
+    command: getprop ro.boot.hwlevel
+    pass_value: MP
+
+  # Camera calibrate status check
+  - type: camera
+    name: camera_status
+    key_name: u
+    command: getprop persist.vendor.camera.mi.dualcal.state
+    param_map:
+      SKY2: 3
+      OTHER: 0
+
+  # Debug policy
+  - type: command
+    name: debug_policy
+    key_name: l
+    command: getprop ro.boot.dp
+    pass_value: 0x20
+
+  # Security Key: FIDO
+  - type: security_key
+    name: fido
+    key_name: h
+
+  # Security Key: IFAA
+  - type: security_key
+    name: ifaa
+    key_name: g
+
+  # Digital rights management key: Widevine
+  - type: security_key
+    name: widevine
+    key_name: q
+
+  # Android Key box, services for DRM(Digital Rights Management)
+  - type: security_key
+    name: key_box
+    key_name: t
+
+  # Airplane mode check
+  - type: command
+    name: airplane_mode
+    key_name: Y
+    command: settings get global airplane_mode_on
+    pass_value: 0
+
+  # NFC function check
+  - type: nfc
+    name: nfc
+    key_name: B
+
+  # Check for residual test pictures
+  - type: command
+    name: picture
+    key_name: p
+    command: ls -lR /sdcard/DCIM | grep -c "^-"
+    pass_value: 0
+
+
+  # Check if Modem NV info exists
+  - type: command
+    name: modem
+    key_name: w
+    command: getprop persist.radio.goldencopy_flag
+    pass_value: true
+    
+  # Sdcard status check
+  - type: sdcard
+    name: sdcard
+    key_name: v
+    
+  # SIM card status
+  - type: sim
+    name: simcard_status
+    key_name: o
+    command: getprop gsm.sim.state
+    param_map:
+      JAPAN: ABSENT,NOT_READY
+      DSDS: ABSENT,ABSENT
+      SSSS: ABSENT
+     
+    
+  # SIM tray status
+  - type: command
+    name: sim_tray
+    command: cat /sys/devices/platform/soc/soc:simtray/status
+    key_name: s
+    pass_value: 1
+ 
+
+  # recovery apps absence
+  - type: command
+    name: recovery
+    key_name: G
+    command: "[ $(getprop ro.build.ab_update) == true ] && path='/mnt/rescue/recovery/last_format_data' || path='/cache/recovery/last_format_data'; [ -f $path ] && echo 'EXIST' || echo 'NOT EXIST'"
+    pass_value: NOT EXIST
+
+  # WifiScan
+  - type: wifi_scan
+    name: wifi_scan
+    key_name: G
+
+  # Xiaomi account
+  - type: account
+    name: mi_account
+    key_name: T
+
+  # shipmode
+  - type: ship_mode
+    name: ship_mode
+    key_name: K
+    
+  # OP Cust
+  - type: opcust
+    name: opcust
+    key_name: M
+
+expandInfoList:
+  # Phone SN
+  - type: command
+    name: phone_sn
+    key_name: c
+    command: getprop ro.ril.oem.psno
+
+  # System image version
+  - type: command
+    name: version
+    key_name: d
+    command: getprop ro.build.version.incremental
+
+  # IMEI1
+  - type: sim
+    name: imei1
+    key_name: e
+
+  # IMEI2
+  - type: sim
+    name: imei2
+    key_name: f
+
+  # Bluetooth address
+  - type: command
+    name: bluetooth_address
+    key_name: h
+    command: getprop ro.vendor.ril.oem.btmac 
+
+  # WiFi address
+  - type: command
+    name: wifi_address
+    key_name: i
+    command: getprop ro.vendor.ril.oem.wifimac
+
+  # CPU id
+  - type: command
+    name: cpu_id
+    key_name: k
+    command: getprop ro.boot.cpuid
+
+  # Storage id
+  - type: command
+    name: storage_id
+    key_name: l
+    command: cat sys/class/mi_memory/mi_memory_device/ufshcd0/dump_string_desc_serial
+
+  # tzProvision
+  - type: security_key
+    name: tz_key
+    key_name: m
+
+  # Hardware version
+  - type: command
+    name: hardware_version
+    key_name: n
+    command: getprop ro.boot.hwversion
+
+  # Maximum CPU frequency
+  - type: cpu_frequency
+    name: cpu_frequency
+    key_name: p
+    param_map:
+      core_number: 8
+      useHz: true
+
+  # Memory size
+  - type: command
+    name: memory_size
+    key_name: q
+    command: printf "$(cat /proc/mv | head -1 | cut -d ' ' -f 3)GB"
+
+  # Storage size
+  - type: command
+    name: storage_size
+    key_name: r
+    command: printf "$(cat /proc/mv | head -2 | tail -1 | cut -d ' ' -f 3)GB"
+
+  # Project code
+  - type: model_name
+    name: model_name
+    key_name: s
+    param_map:
+       23076RA4BC: M19
+       23076RN4BI: M19
+       23076RN8DY: M19
+       23077RABDC: M19D
+       23076PC4BI: M19P
+       23076RA4BR: M19
+       XIG03: M19
+
+  # MIUI cust image version
+  # Optional
+  - type: command
+    name: cust_version
+    key_name: T
+    command: getprop ro.miui.business.version
