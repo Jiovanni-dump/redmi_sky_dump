@@ -1,0 +1,38 @@
+{
+  "singleKeyRules": [
+    {
+      "primaryKey": 26,
+      "singlePress": [
+        {
+          "type": "longPress",
+          "action": "long_press_power_key",
+          "functions": [
+            {
+              "function": "launch_google_search",
+              "longPressTimeOut": 500,
+              "region": "jp_kd"
+            }
+          ]
+        }
+      ],
+      "multiPress": [
+        {
+          "type": "doubleClick",
+          "action": "double_click_power_key",
+          "functions": [
+            {
+              "function": "au_pay",
+              "region": "jp_kd"
+            }
+          ],
+          "maxCount": 2
+        },
+        {
+          "type": "fiveClick",
+          "action": "five_click_power_key",
+          "maxCount": 5
+        }
+      ]
+    }
+  ]
+}
