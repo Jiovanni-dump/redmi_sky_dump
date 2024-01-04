@@ -1,0 +1,10 @@
+
+ro.product.vendor.brand=Redmi
+ro.product.vendor.name=sky
+ro.product.vendor.device=sky
+ro.vendor.build.fingerprint=Redmi/sky/sky:14/UKQ1.231003.002/V816.0.5.0.UMWCNXM:user/release-keys
+ro.product.vendor.model=
+ro.product.vendor.marketname=
+ro.product.board=sky
+ro.bootimage.build.fingerprint=Redmi/sky/sky:14/UKQ1.231003.002/V816.0.5.0.UMWCNXM:user/release-keys
+
