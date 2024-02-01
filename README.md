@@ -1,0 +1,14 @@
+# missi_phone_global-user 14 UKQ1.230917.001 V816.0.1.0.UMWINXM release-keys
+- manufacturer: xiaomi
+- platform: parrot
+- codename: sky
+- flavor: missi_phone_global-user
+- release: 14
+- id: UKQ1.230917.001
+- incremental: V816.0.1.0.UMWINXM
+- tags: release-keys
+- fingerprint: Redmi/sky/sky:12/SKQ1.230118.001/V816.0.1.0.UMWINXM:user/release-keys
+- is_ab: true
+- brand: Redmi
+- branch: missi_phone_global-user-14-UKQ1.230917.001-V816.0.1.0.UMWINXM-release-keys
+- repo: redmi_sky_dump
