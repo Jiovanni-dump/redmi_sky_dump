@@ -1,0 +1,15 @@
+product/priv-app/Velvet/Velvet.apk.xz
+product/priv-app/ExtraPhotoGlobal/ExtraPhotoGlobal.apk.xz
+product/priv-app/GmsCore/GmsCore.apk.xz
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk.xz
+product/app/Photos/Photos.apk.xz
+product/app/Gmail2/Gmail2.apk.xz
+modem.img.xz
+mi_ext/product/priv-app/Messages_arm64_xxhdpi/Messages_arm64_xxhdpi.apk.xz
+mi_ext/product/app/MIUIGalleryPlayerService/MIUIGalleryPlayerService.apk.xz
+mi_ext/product/data-app/Opera/Opera.apk.xz
+mi_ext/product/data-app/SmartHome/SmartHome.apk.xz
+system_ext/priv-app/Settings/Settings.apk.xz
+bootRE/boot.elf.xz
+recovery.img.xz
+boot.img.xz
