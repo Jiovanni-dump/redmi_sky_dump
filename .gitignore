@@ -1,0 +1,17 @@
+bootRE/boot.elf
+boot.img
+recovery.img
+product/data-app/Health/Health.apk
+product/data-app/MIUIMusicT/MIUIMusicT.apk
+product/data-app/MIUIYoupin/MIUIYoupin.apk
+product/data-app/SmartHome/SmartHome.apk
+product/data-app/MiShop/MiShop.apk
+product/data-app/MIMediaEditor/MIMediaEditor.apk
+product/priv-app/MIUIBrowser/MIUIBrowser.apk
+product/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk
+product/priv-app/MiuiCamera/MiuiCamera.apk
+product/app/VoiceAssistAndroidT/VoiceAssistAndroidT.apk
+product/app/TrichromeLibrary64/TrichromeLibrary64.apk
+system_ext/apex/com.android.vndk.v30.apex
+system_ext/priv-app/Settings/Settings.apk
+modem.img
