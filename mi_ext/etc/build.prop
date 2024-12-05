@@ -1,0 +1,12 @@
+ro.product.mod_device=sky_in_global
+ro.miui.build.region=in
+setupwizard.feature.enable_quick_start_flow=true
+ro.appsflyer.preinstall.path=/data/miui/pai/pre_install.appsflyer
+ro.miui.pai.preinstall.path=/data/miui/pai/
+ro.miui.customized_clientid=2
+setupwizard.feature.enable_quick_enhanced_biometrics_flow=true
+ro.mi.os.flavor=phone
+ro.mi.os.version.publish=true
+ro.mi.os.version.code=2
+ro.mi.os.version.name=OS2.0
+ro.mi.os.version.incremental=OS2.0.3.0.VMWINXM

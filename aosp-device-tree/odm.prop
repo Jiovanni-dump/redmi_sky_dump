@@ -1,0 +1,4 @@
+ro.logd.size=2M
+ro.vendor.audio.camera.loopback.support=false
+ro.vendor.audio.karaoke.enable=true
+ro.vendor.qti.va_odm.support=1
