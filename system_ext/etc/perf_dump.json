@@ -1,0 +1,10 @@
+{
+    "perf_bigdata_process": {
+        "bigdata_pkg_white_list": "",
+        "bigdata_layer_white_list": "",
+        "bigdata_jank_scene_white_list": "",
+        "bigdata_jank_scene_black_list": "517,518",
+        "bigdata_launch_scene_white_list": "",
+        "bigdata_launch_scene_black_list": ""
+    }
+}
